@@ -37,3 +37,13 @@ var friendsName2 = ["Arsalan", "Ahsan", "Ali", "Hamza"];
 for (var i = 0; i < friendsName2.length; i++) {
     console.log("Hello ".concat(friendsName2[i], ", would you like to learn some TypeScript today?"));
 }
+//Question No: 13
+var transportation = ["Car", "Bike", "Motor Cycle", "Bus"];
+for (var i = 0; i < transportation.length; i++) {
+    console.log("I would like to own a ".concat(transportation[i], "."));
+}
+//Question No: 14
+var guestList = ["Arsalan", "Ahsan", "Ali", "Hamza"];
+for (var i = 0; i < guestList.length; i++) {
+    console.log("Dear ".concat(guestList[i], ", you are cordially invited to dinner, we would honoured to have you!"));
+}

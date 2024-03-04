@@ -47,3 +47,17 @@ let friendsName2 : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"]
 for (let i = 0; i < friendsName2.length; i++) {
     console.log(`Hello ${friendsName2[i]}, would you like to learn some TypeScript today?`)
 }
+
+//Question No: 13
+let transportation : string[] = ["Car", "Bike", "Motor Cycle", "Bus"]
+for (let i = 0; i < transportation.length; i++) {
+    console.log(`I would like to own a ${transportation[i]}.`)
+}
+
+//Question No: 14
+let guestList : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"]
+for (let i = 0; i < guestList.length; i++) {
+    console.log(`Dear ${guestList[i]}, you are cordially invited to dinner, we would honoured to have you!`)
+}
+
+//Question No: 15
