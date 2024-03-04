@@ -1,4 +1,4 @@
-// 100 Days Challange (Governer Initiative)
+//100 Days Challange (Governer Initiative)
 
 //Question No: 2
 let personName : string = "Arsalan"
@@ -29,6 +29,21 @@ console.log(10-2); //Subtraction
 console.log(2*4); //Multiplication
 console.log(16/2); //Division
 
-// Question No: 9
+//Question No: 9
 let favoriteNumber : number = 7
 console.log(`My favorite number is ${favoriteNumber}.`)
+
+//Question No: 10
+// This is 100 days challange of TypeScript with practice/exercise questions.
+
+//Question No: 11
+let friendsName1 : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"]
+for (let i = 0; i < friendsName1.length; i++) {
+    console.log(friendsName1[i])
+}
+
+//Question No: 12
+let friendsName2 : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"]
+for (let i = 0; i < friendsName2.length; i++) {
+    console.log(`Hello ${friendsName2[i]}, would you like to learn some TypeScript today?`)
+}

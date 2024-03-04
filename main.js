@@ -1,4 +1,4 @@
-// 100 Days Challange (Governer Initiative)
+//100 Days Challange (Governer Initiative)
 //Question No: 2
 var personName = "Arsalan";
 console.log("Hello ".concat(personName, ", would you like to learn some TypeScript today?"));
@@ -22,6 +22,18 @@ console.log(5 + 3); //Addition
 console.log(10 - 2); //Subtraction
 console.log(2 * 4); //Multiplication
 console.log(16 / 2); //Division
-// Question No: 9
+//Question No: 9
 var favoriteNumber = 7;
 console.log("My favorite number is ".concat(favoriteNumber, "."));
+//Question No: 10
+// This is 100 days challange of TypeScript with practice/exercise questions.
+//Question No: 11
+var friendsName1 = ["Arsalan", "Ahsan", "Ali", "Hamza"];
+for (var i = 0; i < friendsName1.length; i++) {
+    console.log(friendsName1[i]);
+}
+//Question No: 12
+var friendsName2 = ["Arsalan", "Ahsan", "Ali", "Hamza"];
+for (var i = 0; i < friendsName2.length; i++) {
+    console.log("Hello ".concat(friendsName2[i], ", would you like to learn some TypeScript today?"));
+}
