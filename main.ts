@@ -87,3 +87,39 @@ for (let i = 0; i < guestList1.length; i++) {
 for (let i = 0; i < guestList1.length; i++) {
     console.log(`Dear ${guestList1[i]} I have found a bigger dinning table.`)
 }
+
+//Add new guest in the beginning of the list
+let newGuestAtBeginning : string = "Kashan"
+guestList1.unshift(newGuestAtBeginning)
+console.log(guestList1)
+
+//Add new guest in the middle of the list
+let newGuestAtMiddle : string = "Usman"
+guestList1.splice(Math.floor(guestList1.length/2), 0, newGuestAtMiddle)
+console.log(guestList1);
+
+//Add new guest in the end of the list
+let newGuestAtEnd : string = "Fayyaz"
+guestList1.push(newGuestAtEnd)
+console.log(guestList1);
+
+//Print new invitations
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]}, you are cordially invited to dinner, we would honoured to have you!`)
+}
+
+//Question No: 17
+//You just found out that your new table won't arrive on time for the dinner, now you have space for only two guests.
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]} unfortunately my dinning table won't arrive on time for the dinner, now i have only space for two guests.`)
+}
+
+//Remove guests until only two names remain
+for (let i = 2; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]} Sorry we can't invite you to dinner.`);
+}
+
+// if (guestList1.length >= 2) {
+//     let removedGuest = guestList1.pop()
+//     console.log(`Dear ${removedGuest} Sorry we can't invite you to dinner.`);
+// }
