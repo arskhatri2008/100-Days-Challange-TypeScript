@@ -26,7 +26,7 @@ console.log(16 / 2); //Division
 var favoriteNumber = 7;
 console.log("My favorite number is ".concat(favoriteNumber, "."));
 //Question No: 10
-// This is 100 days challange of TypeScript with practice/exercise questions.
+// This is 100 days challenge of TypeScript with practice/exercise questions.
 //Question No: 11
 var friendsName1 = ["Arsalan", "Ahsan", "Ali", "Hamza"];
 for (var i = 0; i < friendsName1.length; i++) {
@@ -46,4 +46,25 @@ for (var i = 0; i < transportation.length; i++) {
 var guestList = ["Arsalan", "Ahsan", "Ali", "Hamza"];
 for (var i = 0; i < guestList.length; i++) {
     console.log("Dear ".concat(guestList[i], ", you are cordially invited to dinner, we would honoured to have you!"));
+}
+//Question No: 15
+var guestList1 = ["Arsalan", "Ahsan", "Ali", "Hamza"]; //Guest select as per previous example
+for (var i = 0; i < guestList1.length; i++) {
+    console.log("Dear ".concat(guestList1[i], ", you are cordially invited to dinner, we would honoured to have you!"));
+}
+//Assume Arsalan can't make it to dinner
+var guestUnableToAttend = "Arsalan";
+//Print a statement saying about guest who can't make it to dinner
+console.log("Unfortunately ".concat(guestUnableToAttend, " can't make it to the dinner"));
+//Modify the list accordingly, lets replace the new name with that guest who can't make it.
+var guestReplacement = "Ahmed";
+guestList1[guestList1.indexOf(guestUnableToAttend)] = guestReplacement;
+//Print the new list of guests
+for (var i = 0; i < guestList1.length; i++) {
+    console.log("Dear ".concat(guestList1[i], ", you are cordially invited to dinner, we would honoured to have you!"));
+}
+//Question No: 16
+//You just found a bigger dinning table, so now more space is available now thing more 3 guest to invite them in to the dinner.
+for (var i = 0; i < guestList1.length; i++) {
+    console.log("Dear ".concat(guestList1[i], " I have found a bigger dinning table."));
 }

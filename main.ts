@@ -34,7 +34,7 @@ let favoriteNumber : number = 7
 console.log(`My favorite number is ${favoriteNumber}.`)
 
 //Question No: 10
-// This is 100 days challange of TypeScript with practice/exercise questions.
+// This is 100 days challenge of TypeScript with practice/exercise questions.
 
 //Question No: 11
 let friendsName1 : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"]
@@ -61,3 +61,29 @@ for (let i = 0; i < guestList.length; i++) {
 }
 
 //Question No: 15
+let guestList1 : string[] = ["Arsalan", "Ahsan", "Ali", "Hamza"] //Guest select as per previous example
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]}, you are cordially invited to dinner, we would honoured to have you!`)
+}
+
+//Assume Arsalan can't make it to dinner
+let guestUnableToAttend : string = "Arsalan"
+
+//Print a statement saying about guest who can't make it to dinner
+console.log(`Unfortunately ${guestUnableToAttend} can't make it to the dinner`)
+
+//Modify the list accordingly, lets replace the new name with that guest who can't make it.
+let guestReplacement : string = "Ahmed"
+guestList1[guestList1.indexOf(guestUnableToAttend)] = guestReplacement
+
+//Print the new list of guests
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]}, you are cordially invited to dinner, we would honoured to have you!`)
+}
+
+
+//Question No: 16
+//You just found a bigger dinning table, so now more space is available now thing more 3 guest to invite them in to the dinner.
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]} I have found a bigger dinning table.`)
+}
