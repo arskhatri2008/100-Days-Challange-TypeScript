@@ -90,10 +90,11 @@ for (var i = 0; i < guestList1.length; i++) {
     console.log("Dear ".concat(guestList1[i], " unfortunately my dinning table won't arrive on time for the dinner, now i have only space for two guests."));
 }
 //Remove guests until only two names remain
-for (var i = 2; i < guestList1.length; i++) {
-    console.log("Dear ".concat(guestList1[i], " Sorry we can't invite you to dinner."));
+while (guestList1.length > 2) {
+    var removedGuest = guestList1.pop();
+    console.log("Dear ".concat(removedGuest, " Sorry we can't invite you to dinner."));
 }
-// if (guestList1.length >= 2) {
-//     let removedGuest = guestList1.pop()
-//     console.log(`Dear ${removedGuest} Sorry we can't invite you to dinner.`);
-// }
+//Print message to remaining guests
+for (var i = 0; i < guestList1.length; i++) {
+    console.log("Dear ".concat(guestList1[i], " you are still invited to dinner."));
+}

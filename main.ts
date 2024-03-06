@@ -115,11 +115,12 @@ for (let i = 0; i < guestList1.length; i++) {
 }
 
 //Remove guests until only two names remain
-for (let i = 2; i < guestList1.length; i++) {
-    console.log(`Dear ${guestList1[i]} Sorry we can't invite you to dinner.`);
+while (guestList1.length > 2) {
+    let removedGuest = guestList1.pop()
+    console.log(`Dear ${removedGuest} Sorry we can't invite you to dinner.`);
 }
 
-// if (guestList1.length >= 2) {
-//     let removedGuest = guestList1.pop()
-//     console.log(`Dear ${removedGuest} Sorry we can't invite you to dinner.`);
-// }
+//Print message to remaining guests
+for (let i = 0; i < guestList1.length; i++) {
+    console.log(`Dear ${guestList1[i]} you are still invited to dinner.`);
+}
