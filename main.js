@@ -98,3 +98,35 @@ while (guestList1.length > 2) {
 for (var i = 0; i < guestList1.length; i++) {
     console.log("Dear ".concat(guestList1[i], " you are still invited to dinner."));
 }
+//Remove the last two names from guest list
+guestList1.pop();
+guestList1.pop();
+//Print empty guest list
+console.log(guestList1);
+//Question No: 18
+//Store the five places of the world in the array.
+var placesOfWorld = ["India", "USA", "China", "Japan", "Russia"];
+//Print the array in its original order.
+console.log(placesOfWorld);
+//Print the array in alphabetical order without modifying the actual list.
+var sortedPlacesOfWorld = placesOfWorld.slice().sort();
+console.log(sortedPlacesOfWorld);
+//Print the array in its original order.
+console.log(placesOfWorld);
+//Print the array in reverse alphabetical order without changing the order of the original list.
+var reversedSortedPlacesOfWorld = sortedPlacesOfWorld.slice().reverse();
+console.log(reversedSortedPlacesOfWorld);
+//Print the array in its original order.
+console.log(placesOfWorld);
+//Reverse the order of the list.
+placesOfWorld.reverse();
+console.log(placesOfWorld);
+//Reverse the order of the list again to show its original order.
+placesOfWorld.reverse();
+console.log(placesOfWorld);
+//Sort array in alphabetical order.
+placesOfWorld.sort();
+console.log(placesOfWorld);
+//Sort an array in reverse alphabetical order.
+placesOfWorld.reverse();
+console.log(placesOfWorld);
